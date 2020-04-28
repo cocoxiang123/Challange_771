@@ -1,0 +1,18 @@
+/**
+ * @param {string} J
+ * @param {string} S
+ * @return {number}
+ */
+var numJewelsInStones = function(J, S) {
+    var count =0;
+    J = [...J];
+    S = [...S];
+    S.forEach(x=>{
+        J.forEach(y=>{
+            if(y === x){
+                count++;
+            }
+        })
+    })
+    return count;
+};
